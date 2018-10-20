@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rosies_pie_shared.Android", "Rosies_pie_shared\Rosies_pie_shared.Android\Rosies_pie_shared.Android.csproj", "{604BE506-B43D-4F38-A017-BB9E2BA5DB7B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Rosies_pie_shared", "Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.shproj", "{A7EAF045-DD63-4FE6-ACE3-9CE37881CA2E}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.projitems*{604be506-b43d-4f38-a017-bb9e2ba5db7b}*SharedItemsImports = 4
+		Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.projitems*{a7eaf045-dd63-4fe6-ace3-9ce37881ca2e}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{604BE506-B43D-4F38-A017-BB9E2BA5DB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{604BE506-B43D-4F38-A017-BB9E2BA5DB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{604BE506-B43D-4F38-A017-BB9E2BA5DB7B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{604BE506-B43D-4F38-A017-BB9E2BA5DB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{604BE506-B43D-4F38-A017-BB9E2BA5DB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{604BE506-B43D-4F38-A017-BB9E2BA5DB7B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C709128-026A-41A4-91EC-EE239A3000C3}
+	EndGlobalSection
+EndGlobal
