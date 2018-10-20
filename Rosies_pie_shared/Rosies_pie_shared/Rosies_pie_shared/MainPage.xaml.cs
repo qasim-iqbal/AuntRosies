@@ -38,5 +38,10 @@ namespace Rosies_pie_shared
                 throw;
             }
         }
+
+        private async void btnEvents_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new EventsPage());
+        }
     }
 }

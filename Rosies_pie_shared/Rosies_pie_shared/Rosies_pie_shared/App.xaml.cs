@@ -1,4 +1,5 @@
 ﻿using System;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,6 +12,9 @@ namespace Rosies_pie_shared
         {
             InitializeComponent();
 
+            // register webservice
+            ServiceContainer.Register<IWebService>(() => new HerokuWebService());
+            
             MainPage = new NavigationPage(new MainPage());
         }
 

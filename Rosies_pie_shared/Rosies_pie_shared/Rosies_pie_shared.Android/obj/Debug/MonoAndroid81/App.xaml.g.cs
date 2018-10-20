@@ -13,7 +13,8 @@
 namespace Rosies_pie_shared {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\school\\DBAS\\Rosies_pie_shared\\Rosies_pie_shared\\Rosies_pie_shared\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\school\\DBAS\\AuntRosies\\Rosies_pie_shared\\Rosies_pie_shared\\Rosies_pie_shared\\A" +
+        "pp.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

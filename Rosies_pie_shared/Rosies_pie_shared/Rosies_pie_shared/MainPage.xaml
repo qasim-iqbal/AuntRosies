@@ -8,6 +8,9 @@
             <Button Text="Click"  
                 x:Name="btnScan"  
                 Clicked="btnScan_Clicked"/>
+            <Button Text="Events"  
+                x:Name="btnEvents"  
+                Clicked="btnEvents_Clicked"/>
             <Label x:Name="lblResult"  />
         </StackLayout>
     </ContentPage.Content>
