@@ -4,15 +4,11 @@
              x:Class="Rosies_pie_shared.EventsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Select your Empoyee #"/>
+            <Label Text="{Binding evetss}"/>
             <StackLayout>
-                <ListView x:Name="lsvAvailableEmployees" ItemsSource="{Binding Events}" >
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextCell Text="{Binding EventID}" Detail="{Binding EventName}" TextColor="DarkGreen"/>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <ListView x:Name="lsvAvailableEmployees" ItemsSource="{Binding Events}" ItemTemplate="" />
+
+
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

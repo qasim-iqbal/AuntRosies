@@ -7,7 +7,7 @@ namespace Rosies_pie_shared
 {
     public class BaseViewModel : BindableObject
     {
-        protected readonly IWebService service = DependencyService.Resolve<IWebService>();
+        protected readonly IWebService service = ServiceContainer.Resolve<IWebService>();
 
         private bool isBusy = false;
         public bool IsBusy

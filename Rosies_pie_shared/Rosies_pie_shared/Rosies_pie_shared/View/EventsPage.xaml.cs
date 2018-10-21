@@ -16,7 +16,9 @@ namespace Rosies_pie_shared
         public EventsPage()
         {
             BindingContext = eventsVM;
+            eventsVM.GetEventsList();
             InitializeComponent();
+
         }
    
     }

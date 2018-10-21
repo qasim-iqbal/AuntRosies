@@ -7,6 +7,6 @@ namespace Rosies_pie_shared
 {
     public interface IWebService
     {
-        Task<Event[]> GetEventListAsync();
+        Task<List<Event>> GetEventListAsync();
     }
 }

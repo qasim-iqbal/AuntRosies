@@ -25,6 +25,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\BaseHttpService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\HerokuWebService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\IQrScanningServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewCell\EventViewCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\EventsViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\EventsPage.xaml.cs">
