@@ -21,7 +21,7 @@ namespace Rosies_pie_shared
 		}
         protected async override void OnAppearing()
         {
-            await eventsVM.GetEventsList();
+            eventsVM.LoadEntries(true);
             base.OnAppearing();
         }
     }

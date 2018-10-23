@@ -49,17 +49,18 @@ namespace Rosies_pie_shared
         {
             try
             {
-                Event eve = new Event { EventID = 2, EventEndDate = DateTime.Now, EventName = "myName", City = "pickering", Address = "asfee", EventStartDate = DateTime.Now, PostalCode = "asfd" };
-                await BlobCache.LocalMachine.InsertObject<Event>(
-                   "events",
-                    eve);
-                //BlobCache.LocalMachine.GetAndFetchLatest("events",
-                //  async () => await ReturnEventsList(), null).Subscribe(eventLogs =>
-                // {
+                //Event eve = new Event { EventID = 2, EventEndDate = DateTime.Now, EventName = "myName", City = "pickering", Address = "asfee", EventStartDate = DateTime.Now, PostalCode = "asfd" };
+                //await BlobCache.LocalMachine.InsertObject<Event>(
+                //   "events",
+                //    eve);
+                //var myEvent = await BlobCache.LocalMachine.GetObject<Event>("events");
+                BlobCache.LocalMachine.GetAndFetchLatest("eventsi",
+                  async () => await ReturnEventsList(), null).Subscribe(eventLogs =>
+                 {
 
-                //     Events = eventLogs;
+                     Events = new ObservableCollection<Event>(eventLogs);
 
-                // });
+                 });
 
 
 
