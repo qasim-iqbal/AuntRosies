@@ -107,9 +107,18 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Rosies_pie_shared.Android.dll" comes first in this list. */
 		"Rosies_pie_shared.Android.dll",
+		"Akavache.dll",
+		"Akavache.Sqlite3.dll",
 		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
+		"Splat.dll",
+		"SQLitePCLRaw.batteries_e_sqlite3.dll",
+		"SQLitePCLRaw.batteries_v2.dll",
+		"SQLitePCLRaw.core.dll",
+		"SQLitePCLRaw.lib.e_sqlite3.dll",
+		"SQLitePCLRaw.provider.e_sqlite3.dll",
+		"System.Reactive.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

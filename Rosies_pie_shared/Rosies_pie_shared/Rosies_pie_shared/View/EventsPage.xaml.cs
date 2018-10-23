@@ -9,17 +9,20 @@ using Xamarin.Forms.Xaml;
 
 namespace Rosies_pie_shared
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class EventsPage : ContentPage
-    {
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class EventsPage : ContentPage
+	{
         readonly EventsViewModel eventsVM = new EventsViewModel();
-        public EventsPage()
-        {
+		public EventsPage ()
+		{
             BindingContext = eventsVM;
-            eventsVM.GetEventsList();
-            InitializeComponent();
-
+           
+			InitializeComponent ();
+		}
+        protected async override void OnAppearing()
+        {
+            await eventsVM.GetEventsList();
+            base.OnAppearing();
         }
-   
     }
 }

@@ -16,6 +16,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)View\EventsPage.xaml.cs">
+      <DependentUpon>EventsPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -28,10 +32,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewCell\EventViewCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\EventsViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)View\EventsPage.xaml.cs">
-      <DependentUpon>EventsPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)View\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)View\EventsPage.xaml">

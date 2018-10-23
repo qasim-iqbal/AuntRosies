@@ -26,6 +26,7 @@ namespace Rosies_pie_shared.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Splat.Resource.String.library_name = global::Rosies_pie_shared.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Rosies_pie_shared.Droid.Resource.Attribute.actionBarSize;
 			global::ZXing.Net.Mobile.Forms.Android.Resource.Layout.zxingscanneractivitylayout = global::Rosies_pie_shared.Droid.Resource.Layout.zxingscanneractivitylayout;
 			global::ZXing.Net.Mobile.Forms.Android.Resource.Layout.zxingscannerfragmentlayout = global::Rosies_pie_shared.Droid.Resource.Layout.zxingscannerfragmentlayout;

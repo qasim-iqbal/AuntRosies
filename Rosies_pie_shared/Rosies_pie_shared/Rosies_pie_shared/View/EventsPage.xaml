@@ -1,15 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Rosies_pie_shared.EventsPage">
+             xmlns:local="clr-namespace:Rosies_pie_shared"
+             x:Class="Rosies_pie_shared.EventsPage"
+             Title="Events">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="EventViewCell" >
+                <local:EventViewCell/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding evetss}"/>
-            <StackLayout>
-                <ListView x:Name="lsvAvailableEmployees" ItemsSource="{Binding Events}" ItemTemplate="" />
-
-
-            </StackLayout>
-        </StackLayout>
+                <ListView BackgroundColor="LightGray" HasUnevenRows="True" SeparatorVisibility="Default" 
+                          ItemsSource="{Binding Events}" 
+                          ItemTemplate="{x:StaticResource EventViewCell}"  />
     </ContentPage.Content>
 </ContentPage>

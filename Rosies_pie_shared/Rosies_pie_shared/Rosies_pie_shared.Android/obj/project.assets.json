@@ -2,6 +2,56 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v8.1": {
+      "akavache/6.0.30": {
+        "type": "package",
+        "dependencies": {
+          "akavache.core": "6.0.30",
+          "akavache.sqlite3": "6.0.30"
+        }
+      },
+      "akavache.core/6.0.30": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "Splat": "4.0.2",
+          "System.Reactive": "4.0.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "System.Runtime.Serialization"
+        ],
+        "compile": {
+          "lib/monoandroid80/Akavache.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid80/Akavache.dll": {}
+        }
+      },
+      "akavache.sqlite3/6.0.30": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3",
+          "SQLitePCLRaw.bundle_e_sqlite3": "1.1.11",
+          "SQLitePCLRaw.core": "1.1.11",
+          "Splat": "4.0.2",
+          "System.Reactive": "4.0.0",
+          "akavache.core": "6.0.30"
+        },
+        "compile": {
+          "lib/netstandard2.0/Akavache.Sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Akavache.Sqlite3.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/cs/any/AkavacheSqliteLinkerOverride.cs.pp": {
+            "buildAction": "Content",
+            "codeLanguage": "cs",
+            "copyToOutput": false,
+            "ppOutputPath": "AkavacheSqliteLinkerOverride.cs"
+          }
+        }
+      },
       "FastAndroidCamera/2.0.0": {
         "type": "package",
         "compile": {
@@ -18,6 +68,64 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Splat/4.0.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid80/Splat.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid80/Splat.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlite3/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.android": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.android": "1.1.11"
+        },
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_e_sqlite3.dll": {},
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_e_sqlite3.dll": {},
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.android/1.1.11": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.lib.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.lib.e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.android/1.1.11": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "System.Net.Http/4.3.4": {
@@ -40,6 +148,27 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Reactive/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Reactive.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reactive.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -416,6 +545,63 @@
     }
   },
   "libraries": {
+    "akavache/6.0.30": {
+      "sha512": "5ICO30HVxUGA+Gb6sfuhTym5E7fvCWD1UKbheZJFA0K2dywlXqPQBKTGTTX4jCrnAt+uBAQb6jhFLivOnroE1w==",
+      "type": "package",
+      "path": "akavache/6.0.30",
+      "files": [
+        ".signature.p7s",
+        "akavache.6.0.30.nupkg.sha512",
+        "akavache.nuspec"
+      ]
+    },
+    "akavache.core/6.0.30": {
+      "sha512": "gOZO408SjlNbEeXwE4xiQe8n2K+htfip2tL6adp9Og4hBJCfilPBgKwmRvO/BsRTZXT92JBzcAKt2cUsEq8W6A==",
+      "type": "package",
+      "path": "akavache.core/6.0.30",
+      "files": [
+        ".signature.p7s",
+        "akavache.core.6.0.30.nupkg.sha512",
+        "akavache.core.nuspec",
+        "lib/monoandroid80/Akavache.dll",
+        "lib/monoandroid80/Akavache.pdb",
+        "lib/monoandroid80/Akavache.xml",
+        "lib/net461/Akavache.dll",
+        "lib/net461/Akavache.pdb",
+        "lib/net461/Akavache.xml",
+        "lib/netcoreapp2.0/Akavache.dll",
+        "lib/netcoreapp2.0/Akavache.pdb",
+        "lib/netcoreapp2.0/Akavache.xml",
+        "lib/netstandard2.0/Akavache.dll",
+        "lib/netstandard2.0/Akavache.pdb",
+        "lib/netstandard2.0/Akavache.xml",
+        "lib/uap10.0.16299/Akavache.dll",
+        "lib/uap10.0.16299/Akavache.pdb",
+        "lib/uap10.0.16299/Akavache.pri",
+        "lib/uap10.0.16299/Akavache.xml",
+        "lib/xamarinios10/Akavache.dll",
+        "lib/xamarinios10/Akavache.pdb",
+        "lib/xamarinios10/Akavache.xml",
+        "lib/xamarinmac20/Akavache.dll",
+        "lib/xamarinmac20/Akavache.pdb",
+        "lib/xamarinmac20/Akavache.xml"
+      ]
+    },
+    "akavache.sqlite3/6.0.30": {
+      "sha512": "4WiwVxsdnhQKvm5qX3Ki0j+6WnPgwum8DelnyrGNKqw00qluBealMipJjr9W/vZMsR1inv0ebTf4F7Hj6REvWw==",
+      "type": "package",
+      "path": "akavache.sqlite3/6.0.30",
+      "files": [
+        ".signature.p7s",
+        "akavache.sqlite3.6.0.30.nupkg.sha512",
+        "akavache.sqlite3.nuspec",
+        "content/AkavacheSqliteLinkerOverride.cs.pp",
+        "contentFiles/cs/any/AkavacheSqliteLinkerOverride.cs.pp",
+        "lib/netstandard2.0/Akavache.Sqlite3.dll",
+        "lib/netstandard2.0/Akavache.Sqlite3.pdb",
+        "lib/netstandard2.0/Akavache.Sqlite3.xml"
+      ]
+    },
     "FastAndroidCamera/2.0.0": {
       "sha512": "RQix6VHmVyQXVdP3Y4+Khw1F7HirONNCa5ubGng58gUkmSAhlS4t1Qf1Biyfakx/LjCYJ3SZ99rWSjQgV15uVQ==",
       "type": "package",
@@ -458,6 +644,122 @@
         "newtonsoft.json.nuspec"
       ]
     },
+    "Splat/4.0.2": {
+      "sha512": "u0dJFC+eC8tDGwDcKXHD0FykSl/cN+OPWRHu2fDovZwQr5c+FRjZL6oUQeC4tpaJI3Y6DB5ErbjgsiM4tVU/2Q==",
+      "type": "package",
+      "path": "splat/4.0.2",
+      "files": [
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "lib/monoandroid80/Splat.dll",
+        "lib/monoandroid80/Splat.pdb",
+        "lib/net461/Splat.dll",
+        "lib/net461/Splat.pdb",
+        "lib/netstandard2.0/Splat.dll",
+        "lib/netstandard2.0/Splat.pdb",
+        "lib/uap10.0.16299/Splat.dll",
+        "lib/uap10.0.16299/Splat.pdb",
+        "lib/uap10.0.16299/Splat.pri",
+        "lib/xamarinios10/Splat.dll",
+        "lib/xamarinios10/Splat.pdb",
+        "lib/xamarinmac20/Splat.dll",
+        "lib/xamarinmac20/Splat.pdb",
+        "splat.4.0.2.nupkg.sha512",
+        "splat.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.bundle_e_sqlite3/1.1.11": {
+      "sha512": "YHsGGczG1vs6CMxqJ/CEK+waSos7PgYORSAtgcYSzgUz/VbH31ZKzMiH8EIj6woXAaxR7N8IiznVEdYVBwr/gw==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_e_sqlite3/1.1.11",
+      "files": [
+        "build/wp8/SQLitePCLRaw.bundle_e_sqlite3.targets",
+        "build/wp80/arm/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net35/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net40/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net45/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win8/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win81/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
+        "lib/wp8/_._",
+        "lib/wpa81/SQLitePCLRaw.batteries_e_sqlite3.dll",
+        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_e_sqlite3.1.1.11.nupkg.sha512",
+        "sqlitepclraw.bundle_e_sqlite3.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/1.1.11": {
+      "sha512": "bWiOso10I1vDuc5rbzT69LQT0+oXfYnoqx8vKJ8zim/CJ4ytSd20QNTE/FE0dvWEgXGnvDp7gGJFu6PeWnhx9g==",
+      "type": "package",
+      "path": "sqlitepclraw.core/1.1.11",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/net35/SQLitePCLRaw.core.dll",
+        "lib/net40/SQLitePCLRaw.core.dll",
+        "lib/net45/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.0/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.core.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/uap10.0/SQLitePCLRaw.core.dll",
+        "lib/win8/SQLitePCLRaw.core.dll",
+        "lib/win81/SQLitePCLRaw.core.dll",
+        "lib/wpa81/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.1.1.11.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.android/1.1.11": {
+      "sha512": "yAil/hQP0D90J+LiAzcdOJ5Ro8FbqI1BDNMKqEEi9hMX16zjF4TVi6AIWugeP75qGjECNhTAShRU+sl0eL5RhA==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3.android/1.1.11",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.lib.e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.android.1.1.11.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.android.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3.android/1.1.11": {
+      "sha512": "mydVArXPWt1Cm5c1aemK6UHcmaj+S6Vi7kbh1kuWveYugyQk/jfVLsMZHWu4enKWpDDjgkA1Blcc3CgLgTJJfA==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3.android/1.1.11",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.android.1.1.11.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.android.nuspec"
+      ]
+    },
     "System.Net.Http/4.3.4": {
       "sha512": "Fj7e73NNHwof97gFPTJuq8gv6G895yxkZt14DVnZdEh4gvKl8WrksCwNjIp/JeYX/yu/qxM/iOv9ai+ZY3Fp7Q==",
       "type": "package",
@@ -497,6 +799,86 @@
         "runtimes/win/lib/netstandard1.3/System.Net.Http.dll",
         "system.net.http.4.3.4.nupkg.sha512",
         "system.net.http.nuspec"
+      ]
+    },
+    "System.Reactive/4.0.0": {
+      "sha512": "vv4/fY+iZbMa1fK2mnf5abqbhDUdW0NS5ryMU7sBqZqFWL65DpWHm3GWRYLa5v9WJQRruw1dI99GQWPu4L6sSg==",
+      "type": "package",
+      "path": "system.reactive/4.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
+    "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+      "sha512": "BB4Y4G5QH6jPlnI4l8gpD0QxbaUFUUz5478TB2fxLB4pgZbJSKDLQfDaReCbopPPJB5LkwskLo86mXBq2KzpHg==",
+      "type": "package",
+      "path": "system.runtime.interopservices.windowsruntime/4.3.0",
+      "files": [
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "lib/netstandard1.3/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios1/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "ref/netcore50/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/de/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/es/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/fr/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/it/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/ja/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/ko/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/ru/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "ref/netstandard1.0/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/de/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/es/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/it/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.InteropServices.WindowsRuntime.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+        "system.runtime.interopservices.windowsruntime.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.0.0.1": {
@@ -957,7 +1339,10 @@
       "Xamarin.Android.Support.v7.MediaRouter >= 27.0.2.1",
       "Xamarin.Forms >= 3.1.0.697729",
       "ZXing.Net.Mobile >= 2.4.1",
-      "ZXing.Net.Mobile.Forms >= 2.4.1"
+      "ZXing.Net.Mobile.Forms >= 2.4.1",
+      "akavache >= 6.0.30",
+      "akavache.core >= 6.0.30",
+      "akavache.sqlite3 >= 6.0.30"
     ]
   },
   "packageFolders": {
@@ -1032,6 +1417,18 @@
           "ZXing.Net.Mobile.Forms": {
             "target": "Package",
             "version": "[2.4.1, )"
+          },
+          "akavache": {
+            "target": "Package",
+            "version": "[6.0.30, )"
+          },
+          "akavache.core": {
+            "target": "Package",
+            "version": "[6.0.30, )"
+          },
+          "akavache.sqlite3": {
+            "target": "Package",
+            "version": "[6.0.30, )"
           }
         }
       }

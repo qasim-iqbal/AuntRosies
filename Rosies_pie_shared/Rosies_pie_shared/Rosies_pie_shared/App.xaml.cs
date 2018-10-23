@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Akavache;
+using System;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,6 +12,10 @@ namespace Rosies_pie_shared
         public App()
         {
             InitializeComponent();
+
+            //initialize akavache
+            BlobCache.ApplicationName = "AuntRosiesAkavache";
+
 
             // register webservice
             ServiceContainer.Register<IWebService>(() => new HerokuWebService());
