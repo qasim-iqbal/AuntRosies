@@ -61,8 +61,7 @@ namespace Rosies_pie_shared
                      Events = new ObservableCollection<Event>(eventLogs);
 
                  });
-
-
+                
 
             }
             catch (Exception ex)

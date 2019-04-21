@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,19 +31,32 @@ namespace Rosies_pie_shared
 
         }
 
+        /// <summary>
+        /// checks of internet connection
+        /// </summary>
+        /// <returns></returns>
+        public static bool CheckForInternetConnection()
+        {
+            try
+            {
+                using (var client = new WebClient())
+                using (client.OpenRead("http://clients3.google.com/generate_204"))
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
 
         #region IwebserviceImplementation
-        public async Task<ObservableCollection<Event>> GetEventListAsync()
+        async Task<ObservableCollection<Event>> IWebService.GetEventListAsync()
         {
             var url = new Uri(_baseUri, string.Format("/events"));
-            //var response = await SendRequestAsync<Event[]>(url, HttpMethod.Get /*,_headers*/);
-            //foreach (var header in _headers)
-            //{
-            //    //request.Headers.Add(header.Key, header.Value);
-            //    webClient.DefaultRequestHeaders.Add(header.Key, header.Value);
-            //}
-
+            
             try
             {
 
@@ -60,6 +75,52 @@ namespace Rosies_pie_shared
                 throw ex;
             }
 
+        }
+
+
+        async Task<ObservableCollection<EventSales>> IWebService.GetProductListAsync()
+        {
+            var url = new Uri(_baseUri, string.Format("/event_product_list"));
+
+            try
+            {
+
+                ObservableCollection<EventSales> obj = null;
+                var response = await webClient.GetAsync(url);
+                if (response != null)
+                {
+                    var jsonString = await response.Content.ReadAsStringAsync();
+                    obj = JsonConvert.DeserializeObject<ObservableCollection<EventSales>>(jsonString);
+                }
+
+                return obj;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        bool IWebService.UpdateProductAsync(ObservableCollection<EventSales> updatedList)
+        {
+            var url = new Uri(_baseUri, string.Format("/update_event_products"));
+
+            try
+            {
+
+                var eventSalesList = JsonConvert.SerializeObject(updatedList);
+
+                StringContent myContent = new StringContent(eventSalesList);
+                
+                var response =  webClient.PostAsync(url,myContent).Result;
+                
+                
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         #endregion

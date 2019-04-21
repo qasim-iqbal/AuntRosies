@@ -6,6 +6,7 @@ namespace Rosies_pie_shared
 {
     public class Event
     {
+
         public int EventID { get; set; }
         public string EventName { get; set; }
         public DateTime EventStartDate { get; set; }

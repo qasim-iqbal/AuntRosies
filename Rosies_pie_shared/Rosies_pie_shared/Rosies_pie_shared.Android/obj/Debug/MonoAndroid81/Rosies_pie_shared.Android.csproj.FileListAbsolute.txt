@@ -5,8 +5,9 @@ C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\Rosies_pie_shared.Android.csprojAssemblyReference.cache
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res.flag
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\App.xaml.g.cs
-C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\MainPage.xaml.g.cs
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\View\MainPage.xaml.g.cs
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\View\EventsPage.xaml.g.cs
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\View\SalesPage.xaml.g.cs
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\Rosies_pie_shared.Android.csproj.CoreCompileInputs.cache
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\XamlC.stamp
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\Rosies_pie_shared.Android.dll
@@ -28,6 +29,18 @@ C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-xxhdpi\launcher_foreground.png
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-xxxhdpi\icon.png
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-xxxhdpi\launcher_foreground.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\drawable\baseline_attach_money_white_18dp.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\drawable\baseline_event_white_18dp.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\drawable\baseline_local_grocery_store_white_18dp.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\drawable\rosie_logo.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\drawable\baseline_directions_white_36.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\drawable\baseline_refresh_white_48dp.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\drawable\scan.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-hdpi\rosie_logo.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-mdpi\rosie_logo.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-xhdpi\rosie_logo.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-xxhdpi\rosie_logo.png
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\res\mipmap-xxxhdpi\rosie_logo.png
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\R.cs.flag
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\R.txt
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\uploadflags.txt
@@ -105,6 +118,7 @@ C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\NuGet\02966f4730d2d2a7e89fdca4f5da009c48bc6da3\akavache.sqlite3\6.0.30\AkavacheSqliteLinkerOverride.cs
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\linksrc\Rosies_pie_shared.Android.pdb
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\school\DBAS\AuntRosies\Rosies_pie_shared\Rosies_pie_shared\Rosies_pie_shared.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

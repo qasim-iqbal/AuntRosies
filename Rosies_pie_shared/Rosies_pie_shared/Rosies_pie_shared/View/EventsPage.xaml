@@ -14,7 +14,7 @@
     </ContentPage.Resources>
 
     <ContentPage.Content>
-                <ListView BackgroundColor="LightGray" HasUnevenRows="True" SeparatorVisibility="Default" 
+                <ListView BackgroundColor="LightGray" HasUnevenRows="True" SeparatorVisibility="Default" ItemTapped="ListView_ItemTapped"
                           ItemsSource="{Binding Events}" 
                           ItemTemplate="{x:StaticResource EventViewCell}"  />
     </ContentPage.Content>
